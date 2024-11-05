@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fattoriale di una lista"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 09:08:42 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yMjsiMDg6NTY6MTkgIjsyNjgx"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yMjsiMDk6MDg6NDIgIjsxOzI3ODM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lista, fattoriali" type="Integer" array="True" size="3"/>
+            <declare name="i, k, risultato" type="Integer" array="False" size=""/>
+            <output expression="&quot;dammi 3 valori di cui vuoi fare il fattoriale&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="lista[i]"/>
+            </for>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <assign variable="risultato" expression="1"/>
+                <for variable="k" start="1" end="lista[i]" direction="inc" step="1">
+                    <assign variable="risultato" expression="risultato*k"/>
+                    <assign variable="fattoriali[i]" expression="risultato"/>
+                </for>
+                <output expression="&quot;il fattoriale &#233;: &quot;" newline="True"/>
+                <output expression="fattoriali[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="carta forbice sasso V.2"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-25 09:55:44 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yNTsiMDk6NDA6MzcgIjsyNjc4"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yNTsiMDk6NDA6NDAgIjsxO1VzZXI7REVTS1RPUC0yT0xHSVM2OzIwMjQtMTAtMjQ7IjExOjM0OjM0ICI7Y2FydGEgZm9yYmljZSBzYXNzbyBWLjEuZnByZzs4MTI4"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yNTsiMDk6NTU6NDQgIjsxOzI3OTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="scelta, computer" type="String" array="False" size=""/>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;ciao, scegli carta forbice o sasso&quot;" newline="True"/>
+            <input variable="scelta"/>
+            <while expression="scelta!=&quot;carta&quot; and scelta!=&quot;sasso&quot; and scelta!=&quot;forbice&quot; and scelta!=&quot;esci&quot;">
+                <output expression="&quot;torna all'asilo che non sai scrivere&quot;" newline="True"/>
+                <input variable="scelta"/>
+            </while>
+            <assign variable="numero" expression="random(3)"/>
+            <while expression="scelta!=&quot;esci&quot;">
+                <if expression="numero==0">
+                    <then>
+                        <assign variable="computer" expression="&quot;carta&quot;"/>
+                    </then>
+                    <else>
+                        <if expression="numero==1">
+                            <then>
+                                <assign variable="computer" expression="&quot;forbice&quot;"/>
+                            </then>
+                            <else>
+                                <assign variable="computer" expression="&quot;sasso&quot;"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="scelta==&quot;carta&quot; and computer==&quot;sasso&quot; or scelta==&quot;forbice&quot; and computer==&quot;carta&quot; or scelta==&quot;sasso&quot; and computer==&quot;forbice&quot;">
+                    <then>
+                        <output expression="computer" newline="True"/>
+                        <output expression="&quot;hai vinto&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="scelta==&quot;carta&quot; and computer==&quot;carta&quot; or scelta==&quot;forbice&quot; and computer==&quot;forbice&quot; or scelta==&quot;sasso&quot; and computer==&quot;sasso&quot;">
+                            <then>
+                                <output expression="computer" newline="True"/>
+                                <output expression="&quot;parit&#225;&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="computer" newline="True"/>
+                                <output expression="&quot;hai perso&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <input variable="scelta"/>
+                <while expression="scelta!=&quot;carta&quot; and scelta!=&quot;sasso&quot; and scelta!=&quot;forbice&quot; and scelta!=&quot;esci&quot;">
+                    <output expression="&quot;torna all'asilo che non sai scrivere pagliaccio&quot;" newline="True"/>
+                    <input variable="scelta"/>
+                </while>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

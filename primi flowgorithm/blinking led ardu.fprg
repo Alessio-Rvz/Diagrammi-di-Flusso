@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="blinking led ardu"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 09:09:11 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yOTsiMDg6NTM6NTAgIjsyNjgw"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yOTsiMDk6MDk6MTEgIjsxOzI3ODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LED" type="Integer" array="False" size=""/>
+            <declare name="pinmode, ledstate" type="Boolean" array="False" size=""/>
+            <assign variable="ledstate" expression="false"/>
+            <output expression="&quot;dammi il pin dove vuoi attaccare il led&quot;" newline="True"/>
+            <input variable="LED"/>
+            <output expression="&quot;digita TRUE se vuoi impostare come OUTPUT il PIN, oppure digita FALSE&quot;" newline="True"/>
+            <input variable="pinmode"/>
+            <while expression="1==1">
+                <assign variable="ledstate" expression="true"/>
+                <output expression="ledstate" newline="True"/>
+                <assign variable="ledstate" expression="false"/>
+                <output expression="ledstate" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

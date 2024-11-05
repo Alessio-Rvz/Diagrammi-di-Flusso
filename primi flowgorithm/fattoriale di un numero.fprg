@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fattoriale"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 08:56:08 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yMjsiMDg6NDI6MTIgIjsyNjY5"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yMjsiMDg6NDI6MTYgIjsxO1VzZXI7REVTS1RPUC0yT0xHSVM2OzIwMjQtMTAtMTg7IjA5OjM3OjI4ICI7cXVhZHJhdGkgZGkgdW5hIGxpc3RhLmZwcmc7ODA4Nw=="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yMjsiMDg6NTY6MDggIjszOzI3ODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, i, risultato" type="Integer" array="False" size=""/>
+            <assign variable="risultato" expression="1"/>
+            <output expression="&quot;dammi il numero del quale vuoi fare il fattoriale&quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <assign variable="risultato" expression="risultato*i"/>
+            </for>
+            <output expression="&quot;il fattoriale del numero desiderato &#233;: &quot;" newline="True"/>
+            <output expression="risultato" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="quadrato con controllo"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-15 09:39:08 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0xNTsiMDk6MzQ6MTUgIjsyNjc2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0xNTsiMDk6MzQ6MjAgIjsxO1VzZXI7REVTS1RPUC0yT0xHSVM2OzIwMjQtMTAtMTU7IjA4OjU3OjUwICI7cXVhZHJhdG8gcXVhbGNvc2EgMS5mcHJnOzc4ODk="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0xNTsiMDk6Mzk6MDggIjsxOzI3OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l, A" type="Real" array="False" size=""/>
+            <output expression="&quot;dammi il lato del quadrato&quot;" newline="True"/>
+            <input variable="l"/>
+            <while expression="l&lt;=0">
+                <output expression="&quot;dammi un valore positivo stronzo&quot;" newline="True"/>
+                <input variable="l"/>
+            </while>
+            <output expression="&quot;trovo l'area del quadrato&quot;" newline="True"/>
+            <assign variable="A" expression="l^2"/>
+            <output expression="A" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

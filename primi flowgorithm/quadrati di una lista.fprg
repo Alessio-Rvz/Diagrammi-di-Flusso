@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="quadrati di una lista"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-18 09:45:03 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0xODsiMDk6Mzc6MjggIjsyNjg2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0xODsiMDk6Mzc6MzIgIjsxO1VzZXI7REVTS1RPUC0yT0xHSVM2OzIwMjQtMTAtMTg7IjA5OjIwOjQxICI7dmV0dG9yaSBwYXJpIGUgZGlzcGFyaS5mcHJnOzgyMTE="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0xODsiMDk6NDU6MDMgIjsxOzI3ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lista, quadrati" type="Integer" array="True" size="3"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="lista[i]"/>
+            </for>
+            <output expression="&quot;ciao calcolo il quadrato di tutti gli elementi della lista&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <assign variable="quadrati[i]" expression="lista[i]^2"/>
+                <output expression="quadrati[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

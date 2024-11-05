@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="quadrato qualcosa 1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-15 09:39:48 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0xNTsiMDg6NTc6NTAgIjsyNjc5"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0xNTsiMDk6Mzk6NDggIjsyOzI3OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l, A" type="Real" array="False" size=""/>
+            <output expression="&quot;dammi il lato del quadrato&quot;" newline="True"/>
+            <input variable="l"/>
+            <if expression="">
+                <then>
+                    <output expression="&quot;calcola l'area del quadrato di lato assegnato&quot;" newline="True"/>
+                    <assign variable="A" expression="l^2"/>
+                    <output expression="&quot;il quadrato di lato assegnato ha area&quot;" newline="True"/>
+                    <output expression="A" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;non esistono lati con lunghezza negrativa&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

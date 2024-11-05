@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ricerca testi canzoni"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 09:42:24 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yMjsiMDk6MzI6MTQgIjsyNjcx"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLTJPTEdJUzY7MjAyNC0xMC0yMjsiMDk6NDI6MjQgIjsxOzI3ODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="scelta, canzone1, canzone2" type="String" array="False" size=""/>
+            <assign variable="canzone1" expression="&quot;non ho voglia di cercarla&quot;"/>
+            <assign variable="canzone2" expression="&quot;chi ha voglia di cercarla se la trovi&quot;"/>
+            <output expression="&quot;dammi la canzone di cui vuoi il testo&quot;" newline="True"/>
+            <input variable="scelta"/>
+            <if expression="scelta==&quot;chiara&quot;">
+                <then>
+                    <output expression="canzone1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="scelta==&quot;donda&quot;">
+                        <then>
+                            <output expression="canzone2" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;basta rompere&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
